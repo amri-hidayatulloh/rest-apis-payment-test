@@ -1,0 +1,13 @@
+{
+    "name": "amrihidayatulloh/rest-apis-payment-test",
+    "description": "Restfull for APIs payment test",
+    "authors": [
+        {
+            "name": "amrihidayatulloh",
+            "email": "amri.hidayatulloh@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
