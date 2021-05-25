@@ -1,4 +1,9 @@
 <?php
+/*
+* DBConnection
+* This class is used for handling DB Connection
+*/
+
 class DBConnection
 {
 	private $credentials;
@@ -23,7 +28,6 @@ class DBConnection
 	public function connect() {
 		try {
 		 	$this->conn = new PDO("mysql:host=".$this->credentials['host'].";dbname=".$this->credentials['scheme'], $this->credentials['user'], $this->credentials['password']);
-		 	$this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		} catch(PDOException $e) {
 		 	throw new Exception("Connection failed: " . $e->getMessage());
 		}
