@@ -25,6 +25,7 @@ Next step, run migration file from your terminal, go to project directory and ru
 ```bash
 $ php db/Migrate.php
 ```
+If you have trouble with this migration, you can always import **db/base.sql** to your database manually.
 
 And you are done.
 
